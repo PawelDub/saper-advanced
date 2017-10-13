@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/saper_advanced.css">
+    <title>Saper</title>
+</head>
+
+<body>
+    <h1>Saper</h1>
+     <div class="gameChoice"> 
+        <fieldset>
+            <legend><strong>Wybierz Grę</strong> </legend>
+            <select id="saperGame">
+                <option value="beginner" selected="selected">Beginner</option>
+                <option value="middle">Middle</option>
+                <option value="expert">Expert</option>
+            </select>
+        </fieldset>
+     </div> 
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="licznikBomb"></th>
+                <th colspan="2" class="start"><span>:)</span></th>
+                <th colspan="4" class="licznik"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="2" class="stop"><span>:(</span></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="10">jQuery Saper 2017</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/saper.silnik_advanced.js"></script>
+    <script type="text/javascript" src="js/saper_advanced.js"></script>
+</body>
+
+</html>

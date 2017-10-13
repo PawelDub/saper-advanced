@@ -1,0 +1,102 @@
+* {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+table {
+    border-spacing: 0;
+    width: auto;
+    margin: 50px auto;
+    table-layout: fixed;
+}
+
+th {
+    font-weight: bold;
+    height: 50px;
+    font-size: 20px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+tbody td {
+    cursor: pointer;
+    position: relative;
+
+}
+
+tbody td::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    content: ' ';
+    display: block;
+    opacity: 1;
+}
+
+tbody td.widoczny::before {
+    opacity: 0;
+}
+
+tbody td.flaga::before {
+    content: '?';
+    color: #FF122A;
+    font-weight: bolder;
+}
+tbody td.blad[mina="true"] {
+    background-color: red;
+    color: #fff;
+}
+
+tbody td[mina="true"] {
+    background-color: #000;
+    color: #fff;
+}
+
+.start,
+.stop {
+    cursor: pointer;
+}
+
+.start span,
+.stop span {
+    background: yellow;
+    color: #000;
+    border: 1px solid #000;
+    transform: rotate(90deg);
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+fieldset {
+    width: 20%;
+    display: inline;
+    margin: auto;
+}
+div.gameChoice {
+    text-align: center;
+    width: 100%;
+    align-content: center;
+}
+fieldset select {
+    margin: 15px;
+}
